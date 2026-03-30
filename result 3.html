@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Result</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Your Result</h1>
+        <p id="resultText"></p>
+        <a href="index.html">Restart</a>
+    </div>
+    <script>
+        const result = localStorage.getItem("result");
+        document.getElementById("resultText").innerText = result;
+    </script>
+</body>
+</html>
